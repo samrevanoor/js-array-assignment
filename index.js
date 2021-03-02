@@ -60,7 +60,7 @@ Exercise 6:
 
 // Complete Exercise 6 below...
 
-foods.splice(1,1,"sushi", "cupcake")
+foods.splice(1,1, "sushi", "cupcake")
 
 console.log('Exercise 6 Result:\n', foods);
 
@@ -141,7 +141,21 @@ Exercise 12:
 
 // Complete Exercise 12 below...
 
+let fizz = []
+let buzz = []
+let fizzbuzz = []
 
+nums.forEach(function(value){
+  if((value % 3) === 0){
+  fizz.push(value)}})
+
+nums.forEach(function(value){
+  if((value % 5) === 0){
+   buzz.push(value)}})
+
+nums.forEach(function(value){
+  if((value % 3) === 0 && (value % 5) === 0) {
+  fizzbuzz.push(value)}});
 
 console.log('Exercise 12 Results:');
 console.log('  fizz:', fizz);
@@ -154,6 +168,8 @@ Exercise 13:
   - Assume you don't know how many nested arrays numArrays contains.
 */
 
+// Complete Exercise 13 below...
+
 const numArrays = [
 	[100, 5, 23],
 	[15, 21, 72, 9],
@@ -161,9 +177,7 @@ const numArrays = [
 	[7, 81, 90]
 ];
 
-// Complete Exercise 13 below...
-
-
+const numList = numArrays.pop()
 
 console.log('Exercise 13 Result:\n', numList);
 
@@ -174,7 +188,7 @@ Exercise 14:
 
 // Complete Exercise 14 below...
 
-
+const num = numArrays[2][1]
 
 console.log('Exercise 14 Result:\n', num);
 
